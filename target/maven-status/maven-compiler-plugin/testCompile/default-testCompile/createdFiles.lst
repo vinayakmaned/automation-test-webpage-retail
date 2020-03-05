@@ -1,0 +1,3 @@
+com/automation/training/CucumberTest.class
+com/automation/training/steps/RegistrationSteps.class
+com/automation/training/steps/Hooks.class

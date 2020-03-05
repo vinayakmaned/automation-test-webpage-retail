@@ -11,7 +11,7 @@ Feature: Create a new account for a user
     And I click on Create Button
     And I select a Title Button
     And I enter my personal information
-      | FName  | LName | email                  | Pwd            | F1Name    | L1Name|Company|Address     |City   |Zip     |Mobile     |Ref|
-      | Vin    | Man   | autouser1@automation.com| 123456         | Vina     | Man    | aaa   |2 Homefield |Croydo |87878   |07984479977|man|
+      | FName  | LName | Pwd            | F1Name    | L1Name|Company|Address     |City   |Zip     |Mobile     |Ref|
+      | Vin    | Man   | 123456         | Vina     | Man    | aaa   |2 Homefield |Croydo |87878   |07984479977|man|
     And I select a state from dropdown
     And I click on Register Button

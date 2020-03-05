@@ -1,0 +1,5 @@
+com/automation/utils/browserUtils.class
+com/automation/utils/ConfigProvider.class
+com/automation/training/pages/BasePage.class
+com/automation/training/pages/RegistrationPage.class
+com/automation/utils/DriverProvider.class

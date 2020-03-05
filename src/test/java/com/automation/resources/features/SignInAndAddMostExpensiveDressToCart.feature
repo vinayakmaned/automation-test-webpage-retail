@@ -12,5 +12,4 @@ Feature: Sign in as a registered user
     And I click on Login Button
     And I click on Dresses Tab
     And I add the Expensive Dress to cart
-    And I click on add to the cart
 

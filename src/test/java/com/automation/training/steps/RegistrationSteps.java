@@ -45,7 +45,7 @@ public class RegistrationSteps {
     public void i_enter_my_personal_information(DataTable arg1) throws InterruptedException {
         List<List<String>> data = arg1.asLists();
         registrationPage.enterPersonalDetails(data.get(1).get(0).toString(), data.get(1).get(1).toString(),
-                data.get(1).get(2).toString(), data.get(1).get(3).toString(), data.get(1).get(4).toString(), data.get(1).get(5).toString(), data.get(1).get(6).toString(), data.get(1).get(7).toString(), data.get(1).get(8).toString(), data.get(1).get(9).toString(), data.get(1).get(10).toString(), data.get(1).get(11).toString());
+                data.get(1).get(2).toString(), data.get(1).get(3).toString(), data.get(1).get(4).toString(), data.get(1).get(5).toString(), data.get(1).get(6).toString(), data.get(1).get(7).toString(), data.get(1).get(8).toString(), data.get(1).get(9).toString(), data.get(1).get(10).toString());
         Thread.sleep(10000);
     }
 

@@ -73,6 +73,9 @@ public class RegistrationPage extends BasePage {
 	private static WebElement signout;
 	@FindBy(how = How.XPATH, using = "/html/body/div/div[1]/header/div[3]/div/div/div[3]/div/a")
 	private static WebElement viewcart;
+	@FindBy(how = How.CSS, using = "#category > div.fancybox-overlay.fancybox-overlay-fixed > div > div > div > div")
+	private static WebElement locIframe;
+
 
 
 
@@ -80,13 +83,13 @@ public class RegistrationPage extends BasePage {
         driver.navigate().to(URL);
 	}
 
-	public void enterPersonalDetails(String FName, String LName, String Email, String Pwd, String F1Name, String L1Name, String Company, String Address, String City, String Zip, String Mobile, String Ref) {
+	public void enterPersonalDetails(String FName, String LName, String Pwd, String F1Name, String L1Name, String Company, String Address, String City, String Zip, String Mobile, String Ref) {
 		fname.clear();
 		fname.sendKeys(FName);
 		lname.clear();
 		lname.sendKeys(LName);
-		email.clear();
-		email.sendKeys(Email);
+//		email.clear();
+//		email.sendKeys(Email);
 		pwd.clear();
 		pwd.sendKeys(Pwd);
 		f1name.clear();
@@ -140,6 +143,7 @@ public class RegistrationPage extends BasePage {
 	}
 
 	public void clickcart() throws InterruptedException {
+		driver.switchTo().frame(locIframe);
 		addtocartbutton.click();
 		WebDriverWait wait = new WebDriverWait(driver, 20);
 		Thread.sleep(10000);
